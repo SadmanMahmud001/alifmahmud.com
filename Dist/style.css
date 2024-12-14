@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", system-ui;
+    box-sizing: border-box;
+}
+body{
+    /* padding-bottom: 1000px; */
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #7B5CDC;
+    cursor:pointer;
+}
+
+::-webkit-scrollbar-thumb:active{
+    background-color: #664bb9;
+}
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+#menuItems {
+    transition: all .5s;
+    transform: translateX(-100%); 
+}
+
+#textAnimation::before{
+    content: "Solutions";
+    animation: textAnimation 10s linear infinite;
+}
+
+@keyframes textAnimation {
+    0% {
+        content: "Solutions";
+    }
+    2.7% {
+        content: "Solution";
+    }
+    5.4% {
+        content: "Solutio";
+    }
+    8.1% {
+        content: "Soluti";
+    }
+    10.8% {
+        content: "Solut";
+    }
+    13.5% {
+        content: "Solu";
+    }
+    16.2% {
+        content: "Sol";
+    }
+    18.9% {
+        content: "So";
+    }
+    21.6% {
+        content: "S";
+    }
+    24.3% {
+        content: "";
+    }
+    27% {
+        content: "M";
+    }
+    29.7% {
+        content: "Ma";
+    }
+    32.4% {
+        content: "Mar";
+    }
+    35.1% {
+        content: "Mark";
+    }
+    37.8% {
+        content: "Marke";
+    }
+    40.5% {
+        content: "Market";
+    }
+    43.2% {
+        content: "Marketi";
+    }
+    45.9% {
+        content: "Marketin";
+    }
+    48.6% {
+        content: "Marketing";
+    }
+    51.3% {
+        content: "Marketin";
+    }
+    54% {
+        content: "Marketi";
+    }
+    56.7% {
+        content: "Market";
+    }
+    59.4% {
+        content: "Marke";
+    }
+    62.1% {
+        content: "Mark";
+    }
+    64.8% {
+        content: "Mar";
+    }
+    67.5% {
+        content: "Ma";
+    }
+    70.2% {
+        content: "M";
+    }
+    72.9% {
+        content: "";
+    }
+    75.6% {
+        content: "S";
+    }
+    78.3% {
+        content: "So";
+    }
+    81% {
+        content: "Sol";
+    }
+    83.7% {
+        content: "Solu";
+    }
+    86.4% {
+        content: "Solut";
+    }
+    89.1% {
+        content: "Soluti";
+    }
+    91.8% {
+        content: "Solutio";
+    }
+    94.5% {
+        content: "Solution";
+    }
+    100% {
+        content: "Solutions";
+    }
+}
+
+#textAnimation::after{
+    content: "I";
+    background-color: #F2A33B;
+    color: #F2A33B;
+    font-size: 34px;
+
+}
+
+
+#headerBtn:hover #headerSvg svg{
+    fill: #F75151;
+}
+
+.img-2::after{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    content: "";
+    background-image: url("https://alifmahmud.com/wp-content/uploads/2024/10/card-5-Q8UPFNA.webp");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #7B5CDC;
+    border-radius: 100%;
+}
+
+.img-2::before{
+    position: absolute;
+    left: 0;
+    bottom: -210px;
+    width: 200px;
+    height: 50px;
+    content: "";
+    background-image: url("https://alifmahmud.com/wp-content/uploads/2024/10/card-6-Q8UPFNA.webp");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-shadow: 1px 1px 2px #e7e7e7; 
+    border-radius: 7px;
+}
+
+@media (max-width:640px){
+    .img-2::before{
+        display: none;
+    }
+}
+
+*{
+    scroll-behavior: smooth;
+}

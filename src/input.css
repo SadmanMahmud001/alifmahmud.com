@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .underlineAnimation{
+        @apply after:w-0 after:h-[1px] after:duration-300 after:bg-[#7B5CDC] after:hover:w-full after:absolute after:bottom-[-3px] after:left-0 after:right-0 ;
+    }
+    .headerText{
+        @apply font-[500] duration-150 hover:text-[#7B5CDC] relative text-[14px];
+    }
+    .correntPage{
+        @apply font-[500] text-[#7B5CDC] after:w-full relative after:h-[1px] after:duration-300 after:bg-[#7B5CDC] after:absolute after:bottom-[-3px] after:left-0 after:right-0 text-[14px] ; 
+    }
+    .mianBtn{
+        @apply text-[14px] duration-300 bg-[#7B5CDC] text-white px-5 py-2 rounded-md hover:scale-[.9] hover:bg-[#FFAB2A] hover:text-black;
+    }
+}
+
+@layer utilities{
+    .text-box{
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    }
+}
+
+@layer components{
+    .afterBefore::after{
+        content: "";
+        position: absolute;
+        top: -36px;
+        right: 70px;
+        background-image: url("https://alifmahmud.com/wp-content/uploads/2024/10/icon-twitter-Q8UPFNA.webp");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        width: 30px;
+        height: 30px;
+        @apply md:w-[40px] md:h-[40px];
+    }
+    .afterBefore::before{
+        content: "";
+        position: absolute;
+        top: 36px;
+        right: -30px;
+        background-image: url("	https://alifmahmud.com/wp-content/uploads/2024/10/icon-tiktok-Q8UPFNA.webp");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        width: 30px;
+        height: 30px;
+        @apply md:w-[40px] md:h-[40px];
+    }
+}
+
+@layer components{
+    .element::after{
+        position: absolute;
+        content: "";
+        background-image: url("https://alifmahmud.com/wp-content/uploads/2024/10/metric-item-2.webp");
+        bottom: -50px;
+        width: 200px;
+        height: 98px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border: 1px solid #ebebeb;
+        border-radius: 10px;
+        z-index: 1;
+    }
+}
+
+@layer components{
+    .backgroundColor{
+        background: linear-gradient(to right, #EDE7FB, #E5F0FE);
+    }
+}
+
+@layer components{
+    .box4{
+        @apply px-12 py-10 rounded-[10px] cursor-pointer duration-300 hover:scale-105 hover:bg-[#EEE9FF] border border-[#d0c2fc];
+    }
+    .guaranteed::after{
+        @apply absolute after:content-['Guaranteed'] right-0 top-0 bg-[#51C07E] text-white p-5; 
+    }
+}
+
+@layer components{
+    .afterBefore_2::after{
+        content: "";
+        position: absolute;
+        top: -36px;
+        right: 70px;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        width: 30px;
+        height: 30px;
+        @apply md:w-[40px] md:h-[40px];
+    }
+    .afterBefore_2::before{
+        content: "";
+        position: absolute;
+        top: 36px;
+        right: -30px;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Logo_2023.png/1200px-Facebook_Logo_2023.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        width: 30px;
+        height: 30px;
+        @apply md:w-[40px] md:h-[40px];
+    }
+}
+
+
+/* questions */
+
+@layer components{
+    .questionsBox{
+        @apply flex items-center justify-between w-full py-5 px-10 rounded-xl cursor-pointer border md:w-[80%] ;
+    }
+}
